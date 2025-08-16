@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-accent transition-colors duration-300 flex items-center gap-2"
                     >
-                      <span className="text-xl">{React.createElement(link.icon)}</span>
+                      <span className="text-xl">{link.icon({})}</span>
                       <span>{link.name}</span>
                     </a>
                   ))}
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
               <li>📞 +(91) 6361109426 , 9483600376</li>
               <li>
                 <a href="mailto:medhasyatechsolutions@gmail.com" className="flex items-center hover:text-accent transition-colors duration-300 break-all">
-                  <MdEmail className="w-5 h-5 mr-2" />
+                  {MdEmail({ className: "w-5 h-5 mr-2" })}
                   medhasyatechsolutions@gmail.com
                 </a>
               </li>
