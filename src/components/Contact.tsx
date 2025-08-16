@@ -239,7 +239,7 @@ const Contact: React.FC = () => {
                   +(91) 6361109426 , 9483600376
                 </p>
                 <a href="mailto:medhasyatechsolutions@gmail.com" className="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
-                  <MdEmail className="w-5 h-5 mr-3" />
+                  <span className="w-5 h-5 mr-3">{MdEmail({})}</span>
                   medhasyatechsolutions@gmail.com
                 </a>
               </div>

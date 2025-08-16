@@ -7,10 +7,9 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    
-    { name: 'Instagram', url: 'https://www.instagram.com/medhasyatechsolutions', icon: <FaInstagram /> },
-    { name: 'Youtube', url: 'https://youtube.com/@medhasyatechsolutions?si=tigGqZ2k0U_xrXJJ', icon: <FaYoutube /> },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/medhasya-tech-solutions-41bb83378', icon: <FaLinkedin /> },
+    { name: 'Instagram', url: 'https://www.instagram.com/medhasyatechsolutions', icon: FaInstagram },
+    { name: 'Youtube', url: 'https://youtube.com/@medhasyatechsolutions?si=tigGqZ2k0U_xrXJJ', icon: FaYoutube },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/medhasya-tech-solutions-41bb83378', icon: FaLinkedin },
   ];
 
   const footerLinks = [
@@ -71,7 +70,7 @@ const Footer: React.FC = () => {
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-accent transition-colors duration-300 flex items-center gap-2"
                     >
-                      <span className="text-xl">{link.icon}</span>
+                      <span className="text-xl">{React.createElement(link.icon)}</span>
                       <span>{link.name}</span>
                     </a>
                   ))}
