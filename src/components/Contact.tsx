@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
     if (validateForm()) {
       setLoading(true);
       try {
-        const { data, error } = await supabase
+        const { error } = await supabase
           .from('contacts')
           .insert([
             {
